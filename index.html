@@ -3,16 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kakegurui - Compulsive Gambler</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="Hero">
-        <h1>Kakegurui</h1>
-        <h2> "賭け狂いましょう"</h2>
-    </div>
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar">
+        <div class="nav-logo">賭ケグルイ</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="#themes">Themes</a></li>
+        </ul>
+    </nav>
 
-    <div class=""> </div>
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero">
+        <!-- Background Video -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="Assets/Videos/Kakegurui-Opening.mp4" type="video/mp4">
+            <!-- Add your video file and update the src path above -->
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- Dark Overlay to dim the video -->
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">賭ケグルイ</h1>
+            <h2 class="hero-subtitle">(Kakegurui)</h2>
+            <p class="hero-tagline">"Let's get our gambling freak on!"</p>
+            <div class="hero-cards">
+                <span class="card">♠</span>
+                <span class="card">♥</span>
+                <span class="card">♦</span>
+                <span class="card">♣</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About the Series</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        <strong>Kakegurui</strong> is a Japanese manga series written by Homura Kawamoto and illustrated by Tōru Naomura. 
+                        The story takes place at Hyakkaou Private Academy, a prestigious school where the student hierarchy is determined by gambling prowess.
+                    </p>
+                    <p>
+                        When transfer student Yumeko Jabami arrives, she disrupts the established order with her love for high-stakes gambling 
+                        and her ability to expose cheaters. Unlike others who gamble for money or power, Yumeko gambles purely for the thrill of it.
+                    </p>
+                    <p>
+                        The series explores themes of risk, power dynamics, psychological manipulation, and the addictive nature of gambling, 
+                        all wrapped in a stylish and intense narrative that keeps viewers on the edge of their seats.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>2014</h3>
+                        <p>Manga Debut</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>2017</h3>
+                        <p>Anime Release</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>2 Seasons</h3>
+                        <p>Anime Series</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CHARACTERS SECTION ========== -->
+    <section id="characters" class="characters-section">
+        <div class="container">
+            <h2 class="section-title" onclick="AlterImage()">Main Characters</h2>
+            <div class="characters-grid">
+                <!-- Character Card 1 -->
+                <div class="character-card">
+                    <img src="Assets/Pics/Jabami Yumeko Normal.png" 
+                         alt="Yumeko Jabami" 
+                         class="character-image">
+                    <h3>Yumeko Jabami</h3>
+                    <p>The mysterious transfer student with an insatiable appetite for high-stakes gambling. Her unpredictable nature and genuine love for the thrill of gambling make her a formidable opponent.</p>
+                </div>
+                
+                <!-- Character Card 2 -->
+                <div class="character-card">
+                    <img src="Assets/Pics/Saotome Mary Normal.png" 
+                         alt="Mary Saotome" 
+                         class="character-image" 
+                         >
+                    <h3>Mary Saotome</h3>
+                    <p>A skilled gambler who initially opposes Yumeko but later becomes her ally. She's determined to rise through the ranks and overthrow the student council.</p>
+                </div>
+                
+                <!-- Character Card 3 -->
+                <div class="character-card">
+                    <img src="Assets/Pics/Kirari Momobami Normal.png" 
+                         alt="Kirari Momobami" 
+                         class="character-image"
+                         >
+                    <h3>Kirari Momobami</h3>
+                    <p>The student council president who rules the academy with an iron fist. She's fascinated by Yumeko and sees her as a worthy adversary.</p>
+                </div>
+                
+                <!-- Character Card 4 -->
+                <div class="character-card">
+                    <img src="Assets/Pics/Ryota Suzui Normal.png" 
+                         alt="Ryota Suzui" 
+                         class="character-image"
+                         >
+                    <h3>Ryota Suzui</h3>
+                    <p>A kind-hearted student who becomes Yumeko's friend and companion. He often serves as the voice of reason in her reckless gambling adventures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== THEMES SECTION ========== -->
+    <section id="themes" class="themes-section">
+        <div class="container">
+            <h2 class="section-title">Core Themes</h2>
+            <div class="themes-grid">
+                <div class="theme-card">
+                    <div class="theme-number">01</div>
+                    <h3>Risk & Addiction</h3>
+                    <p>The series explores the psychological aspects of gambling addiction and the rush of putting everything on the line.</p>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-number">02</div>
+                    <h3>Power Dynamics</h3>
+                    <p>Social hierarchy is determined entirely by gambling ability, creating a brutal meritocracy where status is constantly in flux.</p>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-number">03</div>
+                    <h3>Deception & Strategy</h3>
+                    <p>Characters employ psychological manipulation, cheating, and complex strategies to gain advantages in their games.</p>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-number">04</div>
+                    <h3>Equality Through Chance</h3>
+                    <p>Gambling serves as the ultimate equalizer where anyone can rise or fall based on skill, luck, and nerve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kakegurui Fan Site. Created for educational purposes.</p>
+            <p>Kakegurui is owned by Homura Kawamoto and Tōru Naomura.</p>
+        </div>
+    </footer>
 </body>
 </html>
